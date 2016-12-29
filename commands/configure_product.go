@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"sort"
 
-	"github.com/pivotal-cf/om/api"
-	"github.com/pivotal-cf/om/flags"
+	"github.com/rsamban/om/api"
+	"github.com/rsamban/om/flags"
 )
 
 type ConfigureProduct struct {

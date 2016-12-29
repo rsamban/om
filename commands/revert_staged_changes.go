@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/google/go-querystring/query"
-	"github.com/pivotal-cf/om/api"
+	"github.com/rsamban/om/api"
 )
 
 type RevertStagedChanges struct {

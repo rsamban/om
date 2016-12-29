@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"errors"
 
-	"github.com/pivotal-cf/om/commands"
+	"github.com/rsamban/om/commands"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

@@ -4,7 +4,7 @@ package fakes
 import (
 	"sync"
 
-	"github.com/pivotal-cf/om/formcontent"
+	"github.com/rsamban/om/formcontent"
 )
 
 type Multipart struct {

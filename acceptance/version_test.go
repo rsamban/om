@@ -18,7 +18,7 @@ var _ = Describe("version command", func() {
 		version = fmt.Sprintf("v0.0.0-dev.%d", time.Now().Unix())
 
 		var err error
-		pathToMain, err = gexec.Build("github.com/pivotal-cf/om",
+		pathToMain, err = gexec.Build("github.com/rsamban/om",
 			"--ldflags", fmt.Sprintf("-X main.version=%s", version))
 		Expect(err).NotTo(HaveOccurred())
 	})

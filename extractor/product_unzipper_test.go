@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/pivotal-cf/om/extractor"
+	"github.com/rsamban/om/extractor"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

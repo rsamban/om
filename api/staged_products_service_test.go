@@ -7,8 +7,8 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/pivotal-cf/om/api"
-	"github.com/pivotal-cf/om/api/fakes"
+	"github.com/rsamban/om/api"
+	"github.com/rsamban/om/api/fakes"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

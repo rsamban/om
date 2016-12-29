@@ -6,8 +6,8 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/om/commands"
-	"github.com/pivotal-cf/om/commands/fakes"
+	"github.com/rsamban/om/commands"
+	"github.com/rsamban/om/commands/fakes"
 )
 
 var _ = Describe("DeleteUnusedProducts", func() {

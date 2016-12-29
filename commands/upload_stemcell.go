@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/pivotal-cf/om/api"
-	"github.com/pivotal-cf/om/flags"
-	"github.com/pivotal-cf/om/formcontent"
+	"github.com/rsamban/om/api"
+	"github.com/rsamban/om/flags"
+	"github.com/rsamban/om/formcontent"
 )
 
 type UploadStemcell struct {

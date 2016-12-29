@@ -3,9 +3,9 @@ package commands_test
 import (
 	"errors"
 
-	"github.com/pivotal-cf/om/api"
-	"github.com/pivotal-cf/om/commands"
-	"github.com/pivotal-cf/om/commands/fakes"
+	"github.com/rsamban/om/api"
+	"github.com/rsamban/om/commands"
+	"github.com/rsamban/om/commands/fakes"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

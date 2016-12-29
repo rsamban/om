@@ -9,7 +9,7 @@ import (
 	"net/http/httputil"
 	"strings"
 
-	"github.com/pivotal-cf/om/network"
+	"github.com/rsamban/om/network"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

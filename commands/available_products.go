@@ -2,7 +2,7 @@ package commands
 
 import (
 	"github.com/olekukonko/tablewriter"
-	"github.com/pivotal-cf/om/api"
+	"github.com/rsamban/om/api"
 )
 
 type AvailableProducts struct {

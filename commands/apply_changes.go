@@ -7,8 +7,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/pivotal-cf/om/api"
-	"github.com/pivotal-cf/om/flags"
+	"github.com/rsamban/om/api"
+	"github.com/rsamban/om/flags"
 )
 
 type ApplyChanges struct {

@@ -4,7 +4,7 @@ package fakes
 import (
 	"sync"
 
-	"github.com/pivotal-cf/om/api"
+	"github.com/rsamban/om/api"
 )
 
 type BoshFormService struct {

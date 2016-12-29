@@ -6,7 +6,7 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"github.com/pivotal-cf/om/formcontent"
+	"github.com/rsamban/om/formcontent"
 )
 
 var _ = Describe("Form", func() {

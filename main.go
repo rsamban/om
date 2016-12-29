@@ -10,13 +10,13 @@ import (
 
 	"time"
 
-	"github.com/pivotal-cf/om/api"
-	"github.com/pivotal-cf/om/commands"
-	"github.com/pivotal-cf/om/extractor"
-	"github.com/pivotal-cf/om/flags"
-	"github.com/pivotal-cf/om/formcontent"
-	"github.com/pivotal-cf/om/network"
-	"github.com/pivotal-cf/om/progress"
+	"github.com/rsamban/om/api"
+	"github.com/rsamban/om/commands"
+	"github.com/rsamban/om/extractor"
+	"github.com/rsamban/om/flags"
+	"github.com/rsamban/om/formcontent"
+	"github.com/rsamban/om/network"
+	"github.com/rsamban/om/progress"
 )
 
 var version = "unknown"
@@ -89,6 +89,7 @@ func main() {
 	stagedProductsService := api.NewStagedProductsService(authedClient)
 	availableProductsService := api.NewAvailableProductsService(authedClient, progress.NewBar(), liveWriter)
 	diagnosticService := api.NewDiagnosticService(authedClient)
+
 	importInstallationService := api.NewInstallationAssetService(unauthenticatedClient, progress.NewBar(), liveWriter)
 	exportInstallationService := api.NewInstallationAssetService(authedClient, progress.NewBar(), liveWriter)
 	deleteInstallationService := api.NewInstallationAssetService(authedClient, nil, nil)

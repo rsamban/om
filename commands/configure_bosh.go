@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/google/go-querystring/query"
-	"github.com/pivotal-cf/om/api"
-	"github.com/pivotal-cf/om/flags"
+	"github.com/rsamban/om/api"
+	"github.com/rsamban/om/flags"
 )
 
 const (
@@ -80,13 +80,17 @@ func (c ConfigureBosh) Execute(args []string) error {
 
 	if c.Options.AvailabilityZonesConfiguration != "" {
 		c.logger.Printf("configuring availability zones for bosh tile")
-
+		fmt.Printf("testing ...\n")
 		config, err := c.configureForm(c.Options.AvailabilityZonesConfiguration)
+		//fmt.Printf("Error = %s \n", err)
+		fmt.Printf("===========================================================\n")
 		if err != nil {
 			return err
 		}
 
 		err = c.postForm(availabilityZonesConfigurationPath, config)
+		//fmt.Printf("Error = %s \n", err)
+		fmt.Printf("===========================================================\n")
 		if err != nil {
 			return err
 		}
@@ -159,7 +163,6 @@ func (c ConfigureBosh) configureForm(configuration string) (BoshConfiguration, e
 	if err != nil {
 		return BoshConfiguration{}, fmt.Errorf("could not decode json: %s", err)
 	}
-
 	return initialConfig, nil
 }
 

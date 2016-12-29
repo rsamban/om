@@ -7,7 +7,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/pivotal-cf/om/flags"
+	"github.com/rsamban/om/flags"
 )
 
 const tmpl = `{{.Title}}

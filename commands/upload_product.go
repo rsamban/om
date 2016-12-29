@@ -3,8 +3,8 @@ package commands
 import (
 	"fmt"
 
-	"github.com/pivotal-cf/om/api"
-	"github.com/pivotal-cf/om/flags"
+	"github.com/rsamban/om/api"
+	"github.com/rsamban/om/flags"
 )
 
 type UploadProduct struct {

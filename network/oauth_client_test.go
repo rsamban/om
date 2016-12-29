@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/pivotal-cf/om/network"
+	"github.com/rsamban/om/network"
 
 	"time"
 

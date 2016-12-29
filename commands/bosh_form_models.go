@@ -84,7 +84,11 @@ type DirectorConfiguration struct {
 }
 
 type AvailabilityZonesConfiguration struct {
-	AvailabilityZones []string `url:"availability_zones[availability_zones][][iaas_identifier],omitempty" json:"availability_zones"`
+	//AvailabilityZones []AvailabilityZone `json:"availability_zones,omitempty"`
+	AvailabilityZone     []string `url:"availability_zones[availability_zones][][iaas_identifier],omitempty" json:"iaas_identifier"`
+	AvailabilityZoneName []string `url:"availability_zones[availability_zones][][name],omitempty" json:"name"`
+	ClusterName          []string `url:"availability_zones[availability_zones][][cluster],omitempty" json:"cluster"`
+	ResourcePoolName     []string `url:"availability_zones[availability_zones][][resource_pool],omitempty" json:"resource_pool"`
 }
 
 type SecurityConfiguration struct {
@@ -191,6 +195,7 @@ func assignIndex(fields []reflect.Type, values []reflect.Value, numNetworks stri
 			finalTag := strings.Replace(newTag, "**network**", numNetworks, -1)
 
 			switch value.Kind() {
+
 			case reflect.Int:
 				urlValues.Set(finalTag, "0")
 			case reflect.String:

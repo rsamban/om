@@ -10,8 +10,8 @@ import (
 
 	"encoding/json"
 
-	"github.com/pivotal-cf/om/api"
-	"github.com/pivotal-cf/om/flags"
+	"github.com/rsamban/om/api"
+	"github.com/rsamban/om/flags"
 )
 
 //go:generate counterfeiter -o ./fakes/request_service.go --fake-name RequestService . requestService

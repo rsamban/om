@@ -1,6 +1,6 @@
 package fakes
 
-import "github.com/pivotal-cf/om/api"
+import "github.com/rsamban/om/api"
 
 type SetupService struct {
 	SetupCall struct {

@@ -1,6 +1,6 @@
 package fakes
 
-import "github.com/pivotal-cf/om/commands"
+import "github.com/rsamban/om/commands"
 
 type Command struct {
 	ExecuteCall struct {

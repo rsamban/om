@@ -3,7 +3,7 @@ package flags_test
 import (
 	"strings"
 
-	"github.com/pivotal-cf/om/flags"
+	"github.com/rsamban/om/flags"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/pivotal-cf/om/api"
+	"github.com/rsamban/om/api"
 )
 
 type DeleteInstallation struct {
